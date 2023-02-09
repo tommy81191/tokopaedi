@@ -1,13 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+	html,
+	body {
+    font-size: 14px;
+		font-weight: 300;
+    @apply text-gray-600
+	}
+
+	img {
+		height: auto;
+		max-width: 100%;
+		vertical-align: top;
+	}
+
+	ol,
+	ul,
+	dl,
+	p,
+	address,
+	blockquote,
+	figure,
+	pre {
+		margin: 0 0 24px;
+	}
+
+	ol:last-child,
+	ul:last-child,
+	dl:last-child,
+	p:last-child,
+	address:last-child,
+	blockquote:last-child,
+	figure:last-child,
+	pre:last-child {
+		margin-bottom: 0;
+	}
+
+	ol,
+	ul {
+		margin-top: 0;
+	}
+
+	ol ol,
+	ul ol,
+	ol ul,
+	ul ul {
+		margin-bottom: 0;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 400;
+		margin: 0 0 24px;
+		text-rendering: optimizeLegibility;
+	}
+
+	h1:last-child,
+	h2:last-child,
+	h3:last-child,
+	h4:last-child,
+	h5:last-child,
+	h6:last-child {
+		margin-bottom: 0;
+	}
+
+	h1 {
+		@apply text-4xl;
+	}
+
+	h2 {
+		@apply text-2xl;
+	}
+
+	h3 {
+		@apply text-lg;
+	}
+
+	h4 {
+		@apply text-base;
+	}
+
+	h5 {
+		@apply text-sm;
+	}
+
+	h6 {
+		@apply text-xs;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	a:hover,
+	a:focus {
+		outline: 0;
+	}
 }

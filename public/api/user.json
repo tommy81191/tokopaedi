@@ -1,0 +1,14 @@
+{
+	"user_data": [
+		{
+			"name": "Admin",
+			"email": "admin@gmail.com",
+			"password": "admin123"
+		},
+		{
+			"name": "Pak Edi",
+			"email": "pakedi@gmail.com",
+			"password": "pakedi123"
+		}
+	]
+}
